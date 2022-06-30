@@ -2,7 +2,7 @@
   width: 25rem;
   height: 30rem;
   background-color: $blackColor;
-  border-radius: 2rem;
+  border-radius: $borderRadius;
   box-shadow: $box-shadow;
   display: flex;
   flex-direction: column;
