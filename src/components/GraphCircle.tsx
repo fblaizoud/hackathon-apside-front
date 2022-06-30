@@ -3,7 +3,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import React from 'react';
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 
-const percentage = 38;
+const percentage = 75;
 const GraphCircle = () => {
   return (
     <div className="completionChart">
@@ -11,7 +11,7 @@ const GraphCircle = () => {
         <CircularProgressbar
           className="completionChart__graph__circular"
           value={percentage}
-          text={`${percentage + 37}%`}
+          text={`${percentage}%`}
           styles={buildStyles({
             textColor: '#hardBlueDarkcolor',
             pathColor: '#blueLightColor',
