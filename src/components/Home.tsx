@@ -1,7 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 const Home = () => {
-  return <div className="homeContainer">hello</div>;
+  return (
+    <div className="homeContainer">
+      <p>hello</p>
+    </div>
+  );
 };
 
 export default Home;
