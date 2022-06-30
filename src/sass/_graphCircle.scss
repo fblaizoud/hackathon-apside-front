@@ -1,0 +1,24 @@
+.completionChart {
+  width: 300px;
+  height: 650px;
+  left: 1157px;
+  top: 999px;
+  margin: 5vh;
+  padding: 5vh;
+  &__title {
+    display: flex;
+    padding-bottom: 10px;
+    color: $textColor;
+
+    font-family: $fontFamily;
+    font-size: $mediumFontSize;
+  }
+  &__graph {
+    margin: 10px;
+    padding: 20px;
+    border-radius: $borderRadius;
+    box-shadow: $box-shadow;
+    border-radius: 50%;
+    background-color: $blackColor;
+  }
+}
