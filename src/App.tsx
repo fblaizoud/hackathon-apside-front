@@ -6,20 +6,23 @@ import Home from './components/Home';
 import RecentProjects from './components/RecentProjects';
 import GraphChart from './components/GraphChart';
 import GraphCircle from './components/GraphCircle';
-import Navbar from './components/Navbar';
+import NavbarTop from './components/NavbarTop';
 import ProjectCards from './components/ProjectCards';
-import TodaySchedule from './components/todaySchedule';
-
+import TodaySchedule from './components/TodaySchedule';
+import NavbarLeft from './components/NavbarLeft';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Router>
-        <Routes>
-          <Route path="*" element={<TodaySchedule />} />
-        </Routes>
-      </Router>
+      <NavbarTop />
+      <div className="App__content">
+        <NavbarLeft />
+        <Router>
+          <Routes>
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }
