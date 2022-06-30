@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GraphChart from './components/GraphChart';
 import GraphCircle from './components/GraphCircle';
 import Navbar from './components/Navbar';
-import TodaySchedule from './components/TodaySchedule';
+import ProjectCards from './components/ProjectCards';
+import TodaySchedule from './components/todaySchedule';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <GraphChart />
       <GraphCircle />
       <Navbar />
+      <ProjectCards />
       <Router>
         <Routes>
           <Route path="*" element={<TodaySchedule />} />
