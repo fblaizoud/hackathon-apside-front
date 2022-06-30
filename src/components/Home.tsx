@@ -1,7 +1,7 @@
 import React from 'react';
-import GraphChart from './GraphChart';
-import GraphCircle from './GraphCircle';
 
+import GraphChart from './GraphChart';
+// import GraphCircle from './GraphCircle';
 import ProjectActivities from './ProjectActivities';
 import ProjectCards from './ProjectCards';
 import RecentProjects from './RecentProjects';
