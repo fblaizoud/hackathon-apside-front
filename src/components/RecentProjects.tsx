@@ -1,4 +1,5 @@
 import React from 'react';
+
 import toto from '../../data/recentProjects';
 
 const RecentProjects = () => {
@@ -16,29 +17,9 @@ const RecentProjects = () => {
             <li className="recentProjects__container__title__text">Stats</li>
           </ul>
         </div>
-        {/* <div className="recentProjects__container__card">
-          <li>AUTODESK</li>
-          <li>25 May 2020</li>
-          <li>Los</li>
-          <li>10 July 2020</li>
-          <li>In Process</li>
-        </div>
-        <div className="recentProjects__container__card">
-          <li>TARGET</li>
-          <li>10 April 2020</li>
-          <li>Dogos</li>
-          <li>30 Septembre 2020</li>
-          <li>In Process</li>
-        </div>
-        <div className="recentProjects__container__card">
-          <li>REMIX</li>
-          <li>17 May 2020</li>
-          <li>Hermanos</li>
-          <li>25 December 2020</li>
-          <li>Open</li>
-        </div> */}
+
         {toto.map((project) => (
-          <ul className="recentProjects__container__card">
+          <ul className="recentProjects__container__card" key={project.id}>
             <img
               className="recentProjects__container__title__logo"
               src={project.logo}

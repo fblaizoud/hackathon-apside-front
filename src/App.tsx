@@ -1,9 +1,8 @@
 import './App.scss';
 
-import React, { useContext } from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import React from 'react';
 
-import Home from './components/Home';
+// import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import RecentProjects from './components/RecentProjects';
 
 function App() {
