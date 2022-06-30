@@ -1,32 +1,9 @@
 .App {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: $blackColor;
+  font-family: $fontFamily;
 }
 
-li {
-  list-style: none;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.active {
-  color: green;
-}
-
-.body {
-  margin: 20px 0 10px;
-  font-size: 0.9rem;
-}
-
-.home {
-  font-size: 16px;
-  margin-top: 30px;
-}
-
-.home > ul > li {
-  display: block;
-  padding: 5px;
-}

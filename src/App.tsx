@@ -1,45 +1,21 @@
 import './App.scss';
-
+import TodaySchedule from './components/todaySchedule';
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 
-import AddressList from './components/AddressList';
-import Home from './components/Home';
-import Login from './components/Login';
-import TestContext from './components/TestContext';
-import { CurrentTestContextProvider } from './contexts/CurrentTest';
-import CurrentUserContext from './contexts/CurrentUser';
+import GraphCircle from './components/GraphCircle';
+
+import Navbar from './components/Navbar';
 
 function App() {
-  const { id, logout, admin } = useContext(CurrentUserContext);
-
   return (
     <div className="App">
+      <GraphCircle />
+      <Navbar />
       <Router>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/address">Adresses</Link>
-          <Link to="/click">Click</Link>
-          {admin === true && <a href="http://localhost:3001/">Admin panel</a>}
-          {id === 0 ? (
-            <Link to="/login">Se connecter</Link>
-          ) : (
-            <button className="logout" onClick={() => logout()}>
-              Se déconnecter
-            </button>
-          )}
-        </nav>
-        <main>
-          <CurrentTestContextProvider>
-            <Routes>
-              <Route path="*" element={<Home />} />
-              <Route path="/" element={<Home />} />
-              <Route path="/click" element={<TestContext />} />
-              <Route path="/address" element={<AddressList onlyMine={id != 0} />} />
-              <Route path="/login" element={<Login />} />
-            </Routes>
-          </CurrentTestContextProvider>
-        </main>
+        <Routes>
+          <Route path="*" element={<TodaySchedule />} />
+        </Routes>
       </Router>
     </div>
   );
