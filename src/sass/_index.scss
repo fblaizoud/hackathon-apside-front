@@ -1,12 +1,16 @@
 .App {
-  width: 100vw;
-  height: 170vh;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   font-family: $fontFamily;
   scroll-behavior: auto;
+
   &__content {
     display: flex;
     justify-content: space-between;
   }
+}
+:root::-webkit-scrollbar {
+  display: none;
 }

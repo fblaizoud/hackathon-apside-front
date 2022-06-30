@@ -6,12 +6,13 @@
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-  overflow: scroll;
+  overflow-x: hidden;
   background: #2c2f33;
   box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
   border-radius: 8px;
   color: white;
   padding: 18px;
+
   h1 {
     font-size: $smallFontSize;
     font-weight: 600;
@@ -24,6 +25,7 @@
     height: 64px;
     display: flex;
     justify-content: space-between;
+
     &__imgBox {
       width: 64px;
       height: 64px;
@@ -68,6 +70,13 @@
       box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
         6.22302px 6.22302px 18.6691px #000000;
       border-radius: 18.6691px;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+        box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451,
+          inset 3.73381px 3.73381px 6.22302px #000000;
+        border-radius: 12.446px;
+      }
     }
   }
   &__button {
@@ -82,5 +91,12 @@
     font-family: $fontFamily;
     font-size: $smallFontSize;
     font-weight: 500;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.5);
+      box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451,
+        inset 3.73381px 3.73381px 6.22302px #000000;
+      border-radius: 12.446px;
+    }
   }
 }
