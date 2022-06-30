@@ -17,7 +17,9 @@ const Home = () => {
         <div className="homeContainer__left__recentProject">
           <RecentProjects />
         </div>
-        <div className="homeContainer__left__projectOverview"></div>
+        <div className="homeContainer__left__projectOverview">
+          <GraphChart />
+        </div>
       </div>
       <div className="homeContainer__right">
         <div className="homeContainer__right__projectActivities">
