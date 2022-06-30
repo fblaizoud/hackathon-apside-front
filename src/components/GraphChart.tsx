@@ -5,22 +5,6 @@ import { Chart } from 'react-google-charts';
 //
 //
 //options for graphs
-const optionsBar = {
-  legend: {
-    textStyle: { color: '#fff' },
-    position: 'bottom',
-  },
-  title: 'Test Chart',
-  titleTextStyle: { color: '#FFF' },
-  backgroundColor: '#2c2f33',
-  legendTextStyle: { color: '#FFF' },
-  hAxis: {
-    textStyle: { color: '#FFF' },
-  },
-  vAxis: {
-    textStyle: { color: '#FFF' },
-  },
-};
 
 const optionsLine = {
   legend: {
@@ -91,14 +75,7 @@ const dataPie = [
   ['Management', 2],
   ['Netflix', 7],
 ];
-const dataBar = [
-  ['City', 'coucou', 'hibou'],
-  ['New York City, NY', 8175000, 8008000],
-  ['Los Angeles, CA', 3792000, 3694000],
-  ['Chicago, IL', 2695000, 2896000],
-  ['Houston, TX', 2099000, 1953000],
-  ['Philadelphia, PA', 1526000, 1517000],
-];
+
 const dataAll = [
   ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
   ['2004/05', 165, 938, 522, 998, 450, 614.6],
@@ -131,16 +108,7 @@ const GraphChart = () => {
           height="350px"
         />
       </div>
-      <div className="chart__element">
-        <Chart
-          className="chart__element__graph"
-          chartType="BarChart"
-          width="350px"
-          height="350px"
-          data={dataBar}
-          options={optionsBar}
-        />
-      </div>
+
       <div className="chart__element">
         <Chart
           className="chart__element__graph"
