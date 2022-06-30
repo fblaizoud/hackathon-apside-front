@@ -108,17 +108,6 @@ const GraphChart = () => {
           height="350px"
         />
       </div>
-
-      <div className="chart__element">
-        <Chart
-          className="chart__element__graph"
-          chartType="ComboChart"
-          width="350px"
-          height="350px"
-          data={dataAll}
-          options={optionsAll}
-        />
-      </div>
     </div>
   );
 };
