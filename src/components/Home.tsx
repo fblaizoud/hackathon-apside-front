@@ -1,4 +1,7 @@
 import React from 'react';
+import GraphChart from './GraphChart';
+// import GraphCircle from './GraphCircle';
+
 
 import GraphChart from './GraphChart';
 // import GraphCircle from './GraphCircle';
