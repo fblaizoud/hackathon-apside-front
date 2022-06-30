@@ -13,13 +13,12 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "chart.js": "^3.8.0",
     "react": "^17.0.2",
     "react-analytics-charts": "^1.2.13",
-    "react-chartjs-2": "^4.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^17.0.2",
+    "react-google-charts": "^4.0.0",
     "react-router-dom": "^6.2.1",
     "sass": "^1.52.1"
   },
