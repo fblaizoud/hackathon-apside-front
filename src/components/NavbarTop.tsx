@@ -25,7 +25,7 @@ const NavbarTop = () => {
               alt="PhotoProfile"
             />
             <p className="navbarTopContainer__navbarContainer__rightSide__userName">
-              Pedro Maria Jesus
+              Maria Sanchez
             </p>
           </div>
         </div>
