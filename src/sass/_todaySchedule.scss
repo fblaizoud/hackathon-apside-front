@@ -1,4 +1,5 @@
 .todaySchedule {
+  padding-top: 50px;
   width: 25rem;
   height: 35rem;
   padding-left: 2rem;
@@ -18,6 +19,13 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem 2rem;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.5);
+      box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451,
+        inset 3.73381px 3.73381px 6.22302px #000000;
+      border-radius: 12.446px;
+    }
     &__img {
       height: 4rem;
       width: 4rem;
