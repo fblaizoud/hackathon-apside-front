@@ -1,10 +1,10 @@
 import './App.scss';
 
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RecentProjects from './components/RecentProjects';
+
 import Home from './components/Home';
+import RecentProjects from './components/RecentProjects';
 
 function App() {
   return (
