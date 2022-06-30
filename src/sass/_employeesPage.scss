@@ -1,0 +1,93 @@
+.employeesPage {
+  margin-top: 150px;
+  margin-left: 150px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  overflow: scroll;
+  background: #2c2f33;
+  color: white;
+  padding: 18px;
+  &__list{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+        border-radius: 8px;
+        &__imgBox {
+          width: 64px;
+          height: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #2c2f33;
+          box-shadow: inset -12.446px -12.446px 31.1151px #3b4451,
+            inset 12.446px 12.446px 31.1151px #000000;
+          border-radius: 248.921px;
+          img {
+            object-fit: cover;
+            width: 53px;
+          }
+        }
+        &__activity {
+          width: 230px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 0 10px;
+          &__employee {
+            font-size: $xsmallFontSize;
+            font-weight: 600;
+          }
+          &__description {
+            font-size: $tinyFontSize;
+            font-weight: 300;
+          }
+          &__postTime {
+            font-size: $tinyFontSize;
+            font-weight: 300;
+          }
+        }
+        &__button {
+          width: 53px;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+            6.22302px 6.22302px 18.6691px #000000;
+          border-radius: 18.6691px;
+        }
+      }
+  }
+  h1 {
+    font-size: $smallFontSize;
+    font-weight: 600;
+    text-align: left;
+    width: 90%;
+    justify-self: flex-start;
+  }
+  &__button {
+    padding: 5px 45px;
+    background: #2c2f33;
+    box-shadow: inset -6.22302px -6.22302px 18.6691px #3b4451,
+      inset 6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 24.8921px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-family: $fontFamily;
+    font-size: $smallFontSize;
+    font-weight: 500;
+  }
+}
