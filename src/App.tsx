@@ -10,6 +10,7 @@ import NavbarTop from './components/NavbarTop';
 import ProjectCards from './components/ProjectCards';
 import TodaySchedule from './components/TodaySchedule';
 import NavbarLeft from './components/NavbarLeft';
+import EmployeesPage from './components/EmployeesPage';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <NavbarLeft />
         <Router>
           <Routes>
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<EmployeesPage />} />
           </Routes>
         </Router>
       </div>
