@@ -5,15 +5,15 @@
   left: 0;
   margin-top: 100px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   width: 100px;
   height: 100%;
   &__icons {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     height: 90%;
     width: 100px;
     box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
@@ -33,10 +33,6 @@
         box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451,
           inset 3.73381px 3.73381px 6.22302px #000000;
         border-radius: 12.446px;
-      }
-
-      &:last-child {
-        margin-top: 10rem;
       }
     }
   }

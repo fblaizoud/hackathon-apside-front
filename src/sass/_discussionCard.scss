@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  margin-top: 100px;
-  padding-top: 5vh;
   background-color: $blackColor;
-  width: 100%;
+  width: 80%;
   height: 100%;
-  padding-left: 120px;
+  box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+  border-radius: 25px;
+  padding-left: 1rem;
   &__header {
     width: 95%;
     display: flex;
@@ -71,7 +71,9 @@
   &__answerContainer {
     width: 95%;
     display: flex;
+    margin-bottom: 1rem;
     justify-content: space-between;
+    padding-top: 1rem;
     &__input {
       background-color: #e7e7e7;
       padding: 0.5rem;
@@ -81,12 +83,13 @@
       align-items: center;
       gap: 1rem;
       width: 70%;
+
       input {
         width: 80%;
         border: transparent;
         background-color: #e7e7e7;
-        padding: 1rem;
-        font-size: 1.25rem;
+        padding: 0.2rem;
+        font-size: 1rem;
       }
       img {
         &:hover {
@@ -98,8 +101,8 @@
     }
     &__mic {
       img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         padding: 1rem;
         background-color: #ee7f17;
         border-radius: 1rem;
@@ -111,8 +114,8 @@
     }
     &__send {
       img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         padding: 1rem;
         background-color: #e7e7e7;
         border-radius: 1rem;
