@@ -1,0 +1,29 @@
+.projectThemeContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  padding-top: 5vh;
+  background-color: $blackColor;
+  width: 100%;
+  padding-left: 120px;
+  &____projectThemeInput {
+    &__input {
+      height: 80px;
+      width: 580px;
+    }
+  }
+  &__projectThemeCards {
+    display: flex;
+    justify-content: space-around;
+    img {
+      height: 550px;
+    }
+    &__projectThemeCardOtherContainer {
+      height: 550px;
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
