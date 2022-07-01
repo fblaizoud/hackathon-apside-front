@@ -1,17 +1,17 @@
 .cardContainer {
-  margin-top: 7%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   font-family: $fontFamily;
+  gap: 1rem;
 
   &__card1 {
     display: flex;
     flex-direction: column;
     background: linear-gradient(rgba(29, 91, 169, 1), rgba(10, 50, 90, 1));
-    width: 450px;
-    height: 520px;
+    width: 400px;
+    height: 540px;
     border-radius: 3%;
     box-shadow: 5px 5px 0px 0px rgb(34, 34, 34);
 
@@ -26,15 +26,18 @@
       &__teamMembers {
         display: flex;
         justify-content: space-around;
-        margin-left: 5%;
         &__employees {
           display: flex;
           flex-direction: column;
           align-items: center;
           width: 10vw;
+          text-align: center;
           img {
             width: 50px;
             height: 50px;
+          }
+          p {
+            width: 100px;
           }
         }
       }
@@ -43,6 +46,11 @@
       margin: -2%;
       display: flex;
       justify-content: center;
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

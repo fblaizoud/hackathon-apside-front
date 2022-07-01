@@ -1,9 +1,21 @@
 .App {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
-  background-color: $blackColor;
   font-family: $fontFamily;
+  scroll-behavior: auto;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+:root::-webkit-scrollbar {
+  display: none;
 }
 
+.inactive {
+  text-decoration: none;
+  color: white;
+}

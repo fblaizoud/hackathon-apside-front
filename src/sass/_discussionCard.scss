@@ -1,0 +1,130 @@
+.discussionCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: $blackColor;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 100%;
+  box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+  border-radius: 25px;
+  padding-left: 1rem;
+  &__header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    &__left,
+    &__logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__messages {
+    padding-top: 1rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      p {
+        padding: 0.5rem 2rem;
+        background-color: #e7e7e7;
+        margin: 0.5rem;
+        border-radius: 1rem;
+        &:last-child {
+          margin: 10rem 0 5rem;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      p {
+        padding: 0.5rem 2rem;
+        background-color: #ee7f17;
+        margin: 0.5rem;
+        color: white;
+        border-radius: 1rem;
+        &:first-child {
+          margin-top: 8rem;
+        }
+        &:last-child {
+          margin: 6rem 0 2rem 0;
+        }
+      }
+    }
+  }
+  &__answerContainer {
+    width: 95%;
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+    &__input {
+      background-color: #e7e7e7;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      width: 70%;
+
+      input {
+        width: 80%;
+        border: transparent;
+        background-color: #e7e7e7;
+        padding: 0.2rem;
+        font-size: 1rem;
+      }
+      img {
+        &:hover {
+          cursor: pointer;
+          background-color: #ee7f17;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+    &__mic {
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 1rem;
+        background-color: #ee7f17;
+        border-radius: 1rem;
+        &:hover {
+          cursor: pointer;
+          filter: brightness(1.5);
+        }
+      }
+    }
+    &__send {
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 1rem;
+        background-color: #e7e7e7;
+        border-radius: 1rem;
+        &:hover {
+          cursor: pointer;
+          filter: brightness(1.5);
+        }
+      }
+    }
+  }
+}

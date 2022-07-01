@@ -1,2 +1,36 @@
 .homeContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  padding-top: 5vh;
+  background-color: $blackColor;
+  width: 100%;
+  padding-left: 120px;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    &__projectCard {
+      width: 100%;
+    }
+    &__recentProject {
+      width: 90%;
+      margin: 3rem 0;
+    }
+    &__projectOverview {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  &__right {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__projectActivities {
+      margin-bottom: 5rem;
+    }
+  }
 }

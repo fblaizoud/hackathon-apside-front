@@ -1,0 +1,39 @@
+.navbarLeftContainer {
+  background-color: $blackColor;
+  display: flex;
+  position: fixed;
+  left: 0;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100px;
+  height: 100%;
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 90%;
+    width: 100px;
+    box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+      6.22302px 6.22302px 18.6691px #000000;
+    border-radius: 12.446px;
+    img {
+      margin: 1rem;
+      padding: 0.75rem;
+      width: 35px;
+      height: 35px;
+      box-shadow: -6.22302px -6.22302px 18.6691px #3b4451,
+        6.22302px 6.22302px 18.6691px #000000;
+      border-radius: 12.446px;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+        box-shadow: inset -6.22302px -6.22302px 6.22302px #3b4451,
+          inset 3.73381px 3.73381px 6.22302px #000000;
+        border-radius: 12.446px;
+      }
+    }
+  }
+}

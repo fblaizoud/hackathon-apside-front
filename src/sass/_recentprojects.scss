@@ -1,14 +1,10 @@
 .recentProjects {
   display: flex;
-  width: 70%;
+  width: 100%;
   flex-direction: column;
-
   align-items: center;
-
   gap: 1rem;
   background-color: $blackColor;
-
-  padding-bottom: 1rem;
 
   &__container {
     display: flex;
@@ -54,6 +50,10 @@
       font-family: $fontFamily;
       box-shadow: $box-shadow;
       color: antiquewhite;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+      }
 
       &__logo {
         width: 5rem;
