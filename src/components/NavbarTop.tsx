@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavbarTop = () => {
+const NavbarTop = ({ isLogged }) => {
   return (
     <div className="navbarTopContainer">
       <div className="navbarTopContainer">
@@ -16,7 +16,12 @@ const NavbarTop = () => {
               <li>Help</li>
             </ul>
           </div>
-          <div className="navbarTopContainer__navbarContainer__rightSide">
+          <div
+            className={
+              isLogged
+                ? 'navbarTopContainer__navbarContainer__rightSide'
+                : 'navbarTopContainer__navbarContainer__rightSide__hidden'
+            }>
             <img
               className="navbarTopContainer__navbarContainer__rightSide__alert"
               src="/assets/alert.png"
