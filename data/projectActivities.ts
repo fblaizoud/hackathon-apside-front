@@ -6,7 +6,7 @@ const projectActivities = [
     description: 'Completed Task: Update of Project Alfa',
     postTime: '11 min ago',
     jobTitle: 'Project Manager',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    skills: ['Leadership', 'Creativity', 'Teamwork'],
     isOccuped: true
   },
   {
@@ -16,7 +16,7 @@ const projectActivities = [
     description: 'Request for HR Support: Update of Project X',
     postTime: '53 min ago',
     jobTitle: 'Computer Scientist',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    skills: ['Problem-solving', 'Effective communication', 'Python'],
     isOccuped: true
   },
   {
@@ -25,8 +25,8 @@ const projectActivities = [
     employee: 'Anika Tabassum',
     description: 'Completed Task: Update of Project Remax',
     postTime: '1 hours ago',
-    jobTitle: 'Shellfish Collector',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    jobTitle: 'Web Developer',
+    skills: ['Adaptability', 'Teamwork', 'Javascript'],
     isOccuped: false
   },
   {
@@ -35,8 +35,8 @@ const projectActivities = [
     employee: 'Raiyan Khan',
     description: 'QA Part Done: Update of Project Sonic',
     postTime: '2 min ago',
-    jobTitle: 'Pipe smoker',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    jobTitle: 'Data Scientist',
+    skills: ['React', 'Sass', 'Effective communication'],
     isOccuped: false
   },
   {
@@ -45,8 +45,8 @@ const projectActivities = [
     employee: 'Salma Hayek',
     description: 'Request for system Support: Update of Project Alfa',
     postTime: '11 min ago',
-    jobTitle: 'Budding Cultivator',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    jobTitle: 'Web Developer',
+    skills: ['Leadership', 'Creativity', 'Teamwork'],
     isOccuped: false
   },
   {
@@ -56,7 +56,7 @@ const projectActivities = [
     description: 'Completed Task: Update of Project Alfa',
     postTime: '11 min ago',
     jobTitle: 'Project Manager',
-    skills: ['Sweet', 'Cuddle', 'Never sleeps'],
+    skills: ['Leadership', 'Creativity', 'Teamwork'],
     isOccuped: true
   },
   {
