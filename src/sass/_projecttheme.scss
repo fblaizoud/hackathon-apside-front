@@ -1,6 +1,12 @@
 .projectThemeContainer {
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  padding-top: 5vh;
+  background-color: $blackColor;
   width: 100%;
+  padding-left: 120px;
   &____projectThemeInput {
     &__input {
       height: 80px;

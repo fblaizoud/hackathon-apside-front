@@ -1,18 +1,21 @@
 .MessagesGroup {
   background-color: $blackColor;
-  padding: 1rem;
-
+  width: 100%;
   display: flex;
+  font-family: $fontFamily;
   flex-direction: column;
 
   &__search {
     width: 100%;
-    margin: 1rem;
+    margin: 0.5rem;
     display: flex;
     background-color: grey;
     justify-content: start;
     align-items: center;
-    border-radius: 20px;
+    background-color: #2c2f33;
+    box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+    border-radius: 25px;
+    padding: 0.5rem;
     &--img {
       width: 2rem;
       height: 2rem;
@@ -24,16 +27,17 @@
   }
   &__groups {
     width: 95%;
-    margin: 1rem;
-    background-color: grey;
-    border-radius: 20px;
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #2c2f33;
+    box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+    border-radius: 25px;
     &--title {
       color: white;
-      font-size: 1.5rem;
-      padding: 0.5rem;
+      font-size: 1.2rem;
+      padding: 0.3rem;
     }
     &__tchat {
       display: flex;
@@ -42,9 +46,11 @@
       color: white;
       border: 1px solid white;
       border-width: 0 0 1px 0;
-      padding: 0.5rem;
+
       &--img {
         margin: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
       }
       &__div {
         display: flex;
@@ -78,16 +84,19 @@
   }
   &__people {
     width: 95%;
-    margin: 1rem;
+    margin: 0.5rem;
     background-color: grey;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    background-color: #2c2f33;
+    box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #262e32;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
     &--title {
       color: white;
-      font-size: 1.5rem;
-      padding: 0.5rem;
+      font-size: 1.2rem;
+      padding: 0.3rem;
     }
     &__tchat {
       display: flex;
@@ -96,9 +105,11 @@
       color: white;
       border: 1px solid white;
       border-width: 0 0 1px 0;
-      padding: 0.5rem;
+
       &--img {
         margin: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
       }
       &__div {
         display: flex;

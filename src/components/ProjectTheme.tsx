@@ -4,7 +4,7 @@ const ProjectTheme = () => {
   return (
     <div className="projectThemeContainer">
       <div className="projectThemeContainer__projectThemeInput">
-        <input
+        {/* <input
           className="projectThemeContainer__projectThemeInput__input"
           type="text"
           name="Search"
@@ -13,7 +13,7 @@ const ProjectTheme = () => {
           className="projectThemeContainer__projectThemeInput__input"
           type="text"
           name="Filter"
-        />
+        /> */}
       </div>
       <div className="projectThemeContainer__projectThemeCards">
         <div className="projectThemeContainer__projectThemeCards__projectThemeCardInfo">

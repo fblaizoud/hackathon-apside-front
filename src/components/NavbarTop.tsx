@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavbarTop = () => {
   return (
@@ -9,7 +10,9 @@ const NavbarTop = () => {
           <div className="navbarTopContainer__navbarContainer__leftSide">
             <ul>
               <li>Dashboard</li>
-              <li>Messages</li>
+              <NavLink className="inactive" to="/messaging">
+                <li>Messages</li>
+              </NavLink>
               <li>Help</li>
             </ul>
           </div>
