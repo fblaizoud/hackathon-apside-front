@@ -15,7 +15,9 @@ const NavbarLeft = () => {
         <img src="/assets/icon3.png" alt="icon3" />
         </NavLink>
         <img src="/assets/icon4.png" alt="icon4" />
-        <img src="/assets/icon5.png" alt="icon5" />
+        <NavLink className="inactive" to="/login">
+          <img src="/assets/icon5.png" alt="icon5" />
+        </NavLink>
       </div>
     </div>
   );

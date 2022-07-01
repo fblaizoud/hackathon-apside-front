@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavbarTop = () => {
+const NavbarTop = ({ isLogged }) => {
   return (
     <div className="navbarTopContainer">
       <div className="navbarTopContainer">
@@ -9,14 +9,21 @@ const NavbarTop = () => {
         <div className="navbarTopContainer__navbarContainer">
           <div className="navbarTopContainer__navbarContainer__leftSide">
             <ul>
-              <li>Dashboard</li>
+              <NavLink className="inactive" to="/">
+                <li>Dashboard</li>
+              </NavLink>
               <NavLink className="inactive" to="/messaging">
                 <li>Messages</li>
               </NavLink>
               <li>Help</li>
             </ul>
           </div>
-          <div className="navbarTopContainer__navbarContainer__rightSide">
+          <div
+            className={
+              isLogged
+                ? 'navbarTopContainer__navbarContainer__rightSide'
+                : 'navbarTopContainer__navbarContainer__rightSide__hidden'
+            }>
             <img
               className="navbarTopContainer__navbarContainer__rightSide__alert"
               src="/assets/alert.png"
