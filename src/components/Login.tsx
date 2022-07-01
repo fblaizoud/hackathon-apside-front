@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Login = () => {
-  const [password, setPassword] = useState('');
-
+const Login = ({ setIsLogged }) => {
   return (
     <div className="loginContainer">
       <form className="loginContainer__form">
@@ -12,7 +10,7 @@ const Login = () => {
         <input type="text" />
         <label htmlFor="password">Password</label>
         <input type="text" />
-        <NavLink className="inactive" to="/">
+        <NavLink onClick={() => setIsLogged(true)} className="inactive" to="/">
           <input type="submit" value="LOGIN" />
         </NavLink>
       </form>

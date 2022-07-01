@@ -9,7 +9,9 @@ const NavbarTop = ({ isLogged }) => {
         <div className="navbarTopContainer__navbarContainer">
           <div className="navbarTopContainer__navbarContainer__leftSide">
             <ul>
-              <li>Dashboard</li>
+              <NavLink className="inactive" to="/">
+                <li>Dashboard</li>
+              </NavLink>
               <NavLink className="inactive" to="/messaging">
                 <li>Messages</li>
               </NavLink>
