@@ -7,19 +7,24 @@ import Home from './components/Home';
 import NavbarLeft from './components/NavbarLeft';
 import EmployeesPage from './components/EmployeesPage';
 import NavbarTop from './components/NavbarTop';
+import Messaging from './components/Messaging';
+import ProjectTheme from './components/ProjectTheme';
 
 function App() {
   return (
     <div className="App">
-      <NavbarTop />
-      <div className="App__content">
-        <NavbarLeft />
-        <Router>
+      <Router>
+        <NavbarTop />
+        <div className="App__content">
+          <NavbarLeft />
           <Routes>
-            <Route path="*" element={<EmployeesPage />} />
+            <Route path="*" element={<Home />} />
+            <Route path="/projectTheme" element={<ProjectTheme />} />
+            <Route path="/messaging" element={<Messaging />} />
+            <Route path="/employees" element={<EmployeesPage />} />
           </Routes>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </div>
   );
 }
