@@ -11,7 +11,9 @@ const NavbarLeft = () => {
         <NavLink className="inactive" to="/projectTheme">
           <img src="/assets/icon2.png" alt="icon2" />
         </NavLink>
+        <NavLink className="inactive" to="/employees">
         <img src="/assets/icon3.png" alt="icon3" />
+        </NavLink>
         <img src="/assets/icon4.png" alt="icon4" />
         <img src="/assets/icon5.png" alt="icon5" />
       </div>
